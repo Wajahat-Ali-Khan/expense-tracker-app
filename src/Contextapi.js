@@ -21,15 +21,6 @@ export const TransactionProvider = ({children})=> {
             },
         })
     }
-    function addTransaction(transObj){
-        dispatch({
-            type: "addTrans",
-            payload: { 
-                amount: transObj.amount, 
-                desc: transObj.desc 
-            },
-        })
-    }
 
     return(
         <initialVal.Provider value={{
